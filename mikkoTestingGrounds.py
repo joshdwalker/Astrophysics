@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 
 
 
-t = range(0,100)
-dt = 1
+dt = 0.1
+t = np.linspace(0, 10, int(10 / dt))
 
 x = 0
 y = 20

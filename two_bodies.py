@@ -1,3 +1,5 @@
 import numpy as np
-
-print("Hello, World!")
+import pygame
+from pygame.locals import *
+from OpenGL.GL import *
+from OpenGL.GLU import *
