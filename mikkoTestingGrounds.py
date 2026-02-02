@@ -78,10 +78,15 @@ print("new line")
 print("Jerk:", [jXs, jYs, jZs])
 print("new line")
 
-plt.plot3D(xs, ys, zs)
-plt.xlabel('X Position (m)')
-plt.ylabel('Y Position (m)')
-plt.zlabel('Z Position (m)')
-plt.title('Projectile Motion Trajectory')
-plt.grid(True)
+
+fig = plt.figure()
+ax = fig.add_subplot(111, projection='3d')
+
+ax.plot(xs, ys, zs)
+ax.set_xlabel('X Position (m)')
+ax.set_ylabel('Y Position (m)')
+ax.set_zlabel('Z Position (m)')
+ax.set_title('Projectile Motion Trajectory')
+ax.grid(True)
+
 plt.show()
