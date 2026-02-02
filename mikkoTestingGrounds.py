@@ -1,3 +1,4 @@
+import matplotlib
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -33,3 +34,6 @@ for i in t:
     print("Velocity:", [vX, vY])
     print("Acceleration:", [aX, aY])
     print("Jerk:", [jX, jY])
+
+
+    matplotlib.pyplot.plot(x, y, 'bo')
