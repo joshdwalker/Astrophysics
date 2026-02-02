@@ -60,7 +60,7 @@ print("new line")
 print("Jerk:", [jXs, jYs])
 print("new line")
 
-plt.plot(xs, ys, 'bo')
+plt.plot(xs, ys,)
 plt.xlabel('X Position (m)')
 plt.ylabel('Y Position (m)')
 plt.title('Projectile Motion Trajectory')
