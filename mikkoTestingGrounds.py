@@ -48,6 +48,9 @@ for _ in t:
     jXs.append(jX)
     jYs.append(jY)
 
+    if y <= 0:
+        break
+
    
 print("Position:", [xs, ys])
 print("new line")
@@ -58,4 +61,9 @@ print("new line")
 print("Jerk:", [jXs, jYs])
 print("new line")
 
-plot = matplotlib.pyplot.plot(xs, ys, 'bo')
+plt.plot(xs, ys, 'bo')
+plt.xlabel('X Position (m)')
+plt.ylabel('Y Position (m)')
+plt.title('Projectile Motion Trajectory')
+plt.grid(True)
+plt.show
