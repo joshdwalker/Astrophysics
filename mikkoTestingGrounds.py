@@ -78,7 +78,7 @@ print("new line")
 print("Jerk:", [jXs, jYs, jZs])
 print("new line")
 
-plt.plot(xs, ys, zs)
+plt.plot3D(xs, ys, zs)
 plt.xlabel('X Position (m)')
 plt.ylabel('Y Position (m)')
 plt.zlabel('Z Position (m)')
