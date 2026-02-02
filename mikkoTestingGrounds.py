@@ -1,4 +1,3 @@
-import matplotlib
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -66,4 +65,4 @@ plt.xlabel('X Position (m)')
 plt.ylabel('Y Position (m)')
 plt.title('Projectile Motion Trajectory')
 plt.grid(True)
-plt.show
+plt.show()
