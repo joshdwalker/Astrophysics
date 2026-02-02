@@ -48,10 +48,14 @@ for _ in t:
     jXs.append(jX)
     jYs.append(jY)
 
-    print("Position:", [x, y])
-    print("Velocity:", [vX, vY])
-    print("Acceleration:", [aX, aY])
-    print("Jerk:", [jX, jY])
+   
+print("Position:", [xs, ys])
+print("new line")
+print("Velocity:", [vXs, vYs])
+print("new line")
+print("Acceleration:", [aXs, aYs])
+print("new line")
+print("Jerk:", [jXs, jYs])
+print("new line")
 
-
-plot = matplotlib.pyplot.plot(x, y, 'bo')
+plot = matplotlib.pyplot.plot(xs, ys, 'bo')
