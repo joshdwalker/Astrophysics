@@ -18,7 +18,7 @@ class Base(object):
         #set the text that appears in the title bar of the window
         pygame.display.set_caption('Graphics Window')
 
-        #determine if main loop is active / activate main loop
+        #running state determines if main loop is active
         self.running = True
         self.clock = pygame.time.Clock()
 
