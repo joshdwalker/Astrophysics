@@ -8,7 +8,8 @@ class Input(object):
     def update(self):
         #iterate over all user input events (such as keyboard or mouse)
         # that occured since the last time events were checked
-        for event in pygame.event.get():
+        #for event in pygame.event.get():
             #quit event occurs by clicking button to close window
-            if event.quit == pygame.QUIT:
-                self.quit = True
+            #if event.quit == pygame.QUIT:
+                #self.quit = True
+        pass
