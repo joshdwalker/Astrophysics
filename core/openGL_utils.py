@@ -10,7 +10,7 @@ class OpenGL_utils(object):
         #create empty shader object and return reference value
         shader = glCreateShader(shader_type)
         #store the source code in the shader
-        glShaderSource(shader, shader_type)
+        glShaderSource(shader, shader_code)
         #compile the source code previously stored in the shader object
         glCompileShader(shader)
 
