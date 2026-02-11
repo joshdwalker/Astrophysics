@@ -25,6 +25,9 @@ class Base(object):
         #manage user input
         self.input = Input()
 
+        #number of seconds the application has been running
+        self.time = 0
+
     #this will be implemented by a child class
     def initialize(self):
         pass
@@ -45,6 +48,10 @@ class Base(object):
                 self.running = False
 
             ## update ##
+            #seconds since iterations of run loop
+            self.delta_time = self.clock.get_time() / 1000
+            #incremenet the time that the application has been running
+            self.time += self.delta_time
             self.update()
 
             ## render ##
