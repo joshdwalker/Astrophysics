@@ -28,7 +28,7 @@ class Test(Base):
 
         self.program = OpenGL_utils.initialize_program(vertex_shader_code, fragment_shader_code)
 
-        glClearColor(0.0, 0.0, 0.0, 0.0)
+        glClearColor(0.0, 0.0, 0.0, 1.0)
 
         vao = glGenVertexArrays(1)
         glBindVertexArray(vao)
@@ -49,10 +49,14 @@ class Test(Base):
     def update(self):
         glUseProgram(self.program)
 
-        self.translation.data[0] = 0.8 * cos(self.time)
-        self.translation.data[1] = 0.8 * sin(self.time) - 0.17
-
-        self.base_color.data[1] = 0.5 + 0.5 * cos(2 * self.time)
+        if self.input.is_key_pressed('up') or self.input.is_key_pressed('w'):
+            self.translation.data[1] += 0.1
+        if self.input.is_key_pressed('left') or self.input.is_key_pressed('a'):
+            self.translation.data[0] -= 0.1
+        if self.input.is_key_pressed('down') or self.input.is_key_pressed('s'):
+            self.translation.data[1] -= 0.1
+        if self.input.is_key_pressed('right') or self.input.is_key_pressed('d'):
+            self.translation.data[0] += 0.1
 
         glClear(GL_COLOR_BUFFER_BIT)
 
